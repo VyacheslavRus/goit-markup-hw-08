@@ -1,0 +1,119 @@
+/* Клиенты */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title-clients {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.clients-list {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clients-list li {
+  width: 170px;
+  height: 90px;
+  margin-right: 30px;
+}
+
+.clients-list .company-fruits-svg {
+  width: 41px;
+  height: 43px;
+}
+
+.clients-list .foster-peters-svg {
+  width: 80px;
+  height: 42px;
+}
+
+.clients-list .icon-brand-svg {
+  width: 59px;
+  height: 47px;
+}
+
+.clients-list .icon-build-svg {
+  width: 88px;
+  height: 45px;
+}
+
+.clients-list svg {
+  width: 44px;
+  height: 49px;
+  fill: #afb1b8;
+  transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-build,
+.icon-brand,
+.foster-peters,
+.company-fruits,
+.company-tagline,
+.ya-and-co {
+  width: 100%;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-build,
+.icon-brand,
+.foster-peters,
+.company-fruits,
+.company-tagline,
+.ya-and-co {
+  &:hover {
+    border-color: #2196f3;
+  }
+}
+
+.icon-build,
+.icon-brand,
+.foster-peters,
+.company-fruits,
+.company-tagline,
+.ya-and-co {
+  &:focus {
+    border-color: #2196f3;
+  }
+}
+
+.icon-build,
+.icon-brand,
+.foster-peters,
+.company-fruits,
+.company-tagline,
+.ya-and-co {
+  &:hover {
+    svg {
+      fill: #2196f3;
+    }
+  }
+}
+
+.icon-build,
+.icon-brand,
+.foster-peters,
+.company-fruits,
+.company-tagline,
+.ya-and-co {
+  &:focus {
+    svg {
+      fill: #2196f3;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+/* Портфолио */
+
+.main-projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Фильтр */
+
+.button-text {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #f5f4fa;
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  text-align: center;
+
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-item {
+  margin-left: 8px;
+}
+
+.button-item {
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.button-text {
+  &:focus,
+  &:hover {
+    color: #ffffff;
+    background-color: var(--accent-color);
+  }
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}

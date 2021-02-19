@@ -1,0 +1,197 @@
+/* Футер */
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.footer-conteiner {
+  display: flex;
+}
+
+.addres-boks {
+  margin-right: 70px;
+}
+
+.logo-part {
+  color: #ffffff;
+
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.address-text {
+  color: #ffffff;
+
+  margin-bottom: 9px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.address {
+  li {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.address-link-text {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7px;
+  text-decoration: none;
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-link {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+/* Часть с networks */
+
+.netwoks-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  padding-top: 9px;
+  margin-bottom: 20px;
+}
+
+.networks-list {
+  li {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.networks-list {
+  display: flex;
+  fill: #ffffff;
+}
+
+.networks-list li {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.networks-list {
+  li {
+    &:hover {
+      background-color: #2196f3;
+    }
+  }
+}
+
+.networks-list {
+  a {
+    &:focus {
+      background-color: #2196f3;
+    }
+  }
+}
+
+.networks-list a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.networks-list svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+/* часть инпут с кнопкой */
+
+.subscription {
+  margin-left: 95px;
+  padding-top: 9px;
+}
+
+.subscription-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 9px;
+  padding-bottom: 20px;
+}
+
+.subscription-box {
+  padding: 0;
+}
+
+.email-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 15px 0 15px 16px;
+}
+
+.button-subscribe {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: left;
+  letter-spacing: 6%;
+  color: #ffffff;
+  position: relative;
+  padding-left: 29px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.subscription svg {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  margin-left: 10px;
+  margin-top: 3px;
+}

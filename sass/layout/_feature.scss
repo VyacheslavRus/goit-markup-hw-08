@@ -1,0 +1,80 @@
+/* Преимущества */
+/* feature */
+
+.title {
+  margin-bottom: 10px;
+}
+
+.feature-list {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-list-item {
+  width: 270px;
+}
+
+.feature-list-item {
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.icon-antenna {
+  &::before {
+    background-image: url(../images/index/antenna1.png);
+  }
+}
+
+.icon-clock {
+  &::before {
+    background-image: url(../images/index/clock2.png);
+  }
+}
+
+.icon-diagram {
+  &::before {
+    background-image: url(../images/index/diagram3.png);
+  }
+}
+
+.icon-astronaut {
+  &::before {
+    background-image: url(../images/index/astronaut4.png);
+  }
+}
+
+.icon-astronaut,
+.icon-diagram,
+.icon-clock,
+.icon-antenna {
+  &::before {
+    display: inline-block;
+    width: 270px;
+    height: 120px;
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
+
+.feature-list .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.feature-list .feature-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

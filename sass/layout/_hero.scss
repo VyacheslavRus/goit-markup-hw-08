@@ -1,0 +1,45 @@
+/* hero */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
+
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/index/backgroun_hero.jpg);
+  background-size: cover;
+  height: 600px;
+}
+
+.hero-title {
+  color: #ffffff;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+
+  margin-bottom: 30px;
+  letter-spacing: 6%;
+  text-transform: uppercase;
+}
+
+/* button */
+
+.button {
+  color: #ffffff;
+  background-color: var(--accent-color);
+
+  width: 200px;
+  height: 50px;
+
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 6%;
+}
