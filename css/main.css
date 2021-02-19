@@ -57,7 +57,7 @@ textarea {
 }
 
 .conteiner {
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -183,27 +183,51 @@ textarea {
 
 /* hero */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  min-height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/backgroun_hero.jpg);
   background-size: cover;
-  height: 600px;
+  background-position: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 100%;
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero-title {
   color: #ffffff;
+  width: 100%;
+  margin: 0 auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.62;
   margin-bottom: 30px;
   letter-spacing: 6%;
+  text-align: center;
   text-transform: uppercase;
+}
+@media screen and (min-width: 480px) {
+  .hero-title {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }
 
 /* button */
-.button {
+.hero-button {
   color: #ffffff;
   background-color: var(--accent-color);
   width: 200px;
