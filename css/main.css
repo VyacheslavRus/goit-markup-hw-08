@@ -62,9 +62,19 @@ textarea {
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .conteiner {
+    max-width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .conteiner {
     max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    max-width: 1200px;
   }
 }
 
@@ -265,7 +275,6 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .feature-list {
-    flex-wrap: nowrap;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -274,9 +283,6 @@ textarea {
   }
 }
 
-.feature-list-item {
-  width: 450;
-}
 .feature-list-item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -349,6 +355,12 @@ textarea {
 /* сфера деятельности */
 .work {
   padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }
 
 .section-title-work {
@@ -393,38 +405,75 @@ textarea {
 
 /* Команда */
 .team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
-.team-list {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .list-item {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .list-item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-item {
+    margin-bottom: unset;
+    width: 270px;
+    margin-bottom: unset;
+  }
+  .list-item:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
-.list-item:not(:first-child) {
-  margin-left: 30px;
+.list-item img {
+  width: 100%;
 }
 
 .section-title-team {
   color: var(--title-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section-title-team {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.2;
+  }
 }
 
 .team-box {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team-box {
+    padding-bottom: 30px;
+  }
 }
 
 .team-subtitle {
@@ -451,8 +500,10 @@ textarea {
   transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.person-networks li:not(:last-child) {
-  margin-right: 10px;
+@media screen and (min-width: 1200px) {
+  .person-networks li:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .linkedin:hover,

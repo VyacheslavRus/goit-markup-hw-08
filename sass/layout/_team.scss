@@ -1,14 +1,22 @@
 /* Команда */
 
 .team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-list {
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .list-item {
@@ -16,27 +24,48 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
+  margin-bottom: 30px;
 
-.list-item {
-  &:not(:first-child) {
-    margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: unset;
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+    width: 270px;
+    margin-bottom: unset;
+  }
+}
+.list-item img {
+  width: 100%;
 }
 
 .section-title-team {
   color: var(--title-text-color);
 
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.2;
+  }
 }
 
 .team-box {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 
 .team-subtitle {
@@ -66,9 +95,11 @@
 }
 
 .person-networks {
-  li {
-    &:not(:last-child) {
-      margin-right: 10px;
+  @media screen and (min-width: 1200px) {
+    li {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
     }
   }
 }
