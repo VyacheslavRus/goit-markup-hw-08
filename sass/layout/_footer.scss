@@ -1,17 +1,40 @@
 /* Футер */
 
-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.footer {
   background-color: #2f303a;
 }
 
 .footer-conteiner {
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .addres-boks {
-  margin-right: 70px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: unset;
+    margin-right: 70px;
+  }
 }
 
 .logo-part {
@@ -68,15 +91,28 @@ footer {
 
 /* Часть с networks */
 
+.networks {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: unset;
+  }
+}
+
 .netwoks-title {
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 
   padding-top: 9px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: unset;
+  }
 }
 
 .networks-list {
@@ -90,6 +126,7 @@ footer {
 .networks-list {
   display: flex;
   fill: #ffffff;
+  justify-content: center;
 }
 
 .networks-list li {
@@ -139,8 +176,10 @@ footer {
 /* часть инпут с кнопкой */
 
 .subscription {
-  margin-left: 95px;
-  padding-top: 9px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 95px;
+    padding-top: 9px;
+  }
 }
 
 .subscription-title {
@@ -149,22 +188,48 @@ footer {
   line-height: 1.14px;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 9px;
-  padding-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 9px;
+    padding-bottom: 20px;
+    text-align: left;
+  }
 }
 
 .subscription-box {
   padding: 0;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: unset;
+  }
 }
 
 .email-input {
-  width: 358px;
+  display: inline-block;
+  min-width: 290px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
   padding: 15px 0 15px 16px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: unset;
+    width: 358px;
+  }
 }
 
 .button-subscribe {
@@ -183,8 +248,16 @@ footer {
   color: #ffffff;
   position: relative;
   padding-left: 29px;
-  margin-left: 10px;
+
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 10px;
+  }
 }
 
 .subscription svg {

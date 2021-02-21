@@ -584,6 +584,7 @@ textarea {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: -30px;
 }
 @media screen and (min-width: 1200px) {
   .clients-list {
@@ -696,18 +697,44 @@ textarea {
 }
 
 /* Футер */
-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.footer {
   background-color: #2f303a;
 }
 
 .footer-conteiner {
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-conteiner {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-conteiner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .addres-boks {
-  margin-right: 70px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .addres-boks {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .addres-boks {
+    margin-bottom: unset;
+    margin-right: 70px;
+  }
 }
 
 .logo-part {
@@ -752,14 +779,29 @@ footer {
 }
 
 /* Часть с networks */
+.networks {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .networks {
+    margin-bottom: unset;
+  }
+}
+
 .netwoks-title {
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
   padding-top: 9px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .netwoks-title {
+    text-align: unset;
+  }
 }
 
 .networks-list li:not(:last-child) {
@@ -769,6 +811,7 @@ footer {
 .networks-list {
   display: flex;
   fill: #ffffff;
+  justify-content: center;
 }
 
 .networks-list li {
@@ -807,9 +850,11 @@ footer {
 }
 
 /* часть инпут с кнопкой */
-.subscription {
-  margin-left: 95px;
-  padding-top: 9px;
+@media screen and (min-width: 1200px) {
+  .subscription {
+    margin-left: 95px;
+    padding-top: 9px;
+  }
 }
 
 .subscription-title {
@@ -818,22 +863,54 @@ footer {
   line-height: 1.14px;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 9px;
-  padding-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .subscription-title {
+    padding-top: 9px;
+    padding-bottom: 20px;
+    text-align: left;
+  }
 }
 
 .subscription-box {
   padding: 0;
 }
+@media screen and (min-width: 768px) {
+  .subscription-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription-box {
+    flex-direction: unset;
+  }
+}
 
 .email-input {
-  width: 358px;
+  display: inline-block;
+  min-width: 290px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
   padding: 15px 0 15px 16px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .email-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .email-input {
+    margin-bottom: unset;
+    width: 358px;
+  }
 }
 
 .button-subscribe {
@@ -852,8 +929,17 @@ footer {
   color: #ffffff;
   position: relative;
   padding-left: 29px;
-  margin-left: 10px;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .button-subscribe {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-subscribe {
+    margin-left: 10px;
+  }
 }
 
 .subscription svg {
