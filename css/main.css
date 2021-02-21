@@ -83,38 +83,89 @@ textarea {
 }
 
 .logo {
+  display: inline-block;
   color: #000000;
   padding-top: 32px;
   padding-bottom: 32px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.17;
   font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.2;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 
 .logo-text {
   color: var(--accent-color);
 }
 
-/* site nav and connection link */
+.button-menu {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: inherit;
+  border: none;
+  margin: 10px 10px 10px 0;
+}
+@media screen and (min-width: 768px) {
+  .button-menu {
+    display: none;
+  }
+}
+
+.button-icon {
+  width: 24px;
+  height: 16px;
+}
+
+/* site nav, connection link*/
 .header-box {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .site-nav {
-  display: flex;
-  margin-left: 93px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: flex;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    margin-left: 93px;
+  }
 }
 
 .connection-link {
-  display: flex;
-  margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .connection-link {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connection-link {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .site-item:not(:first-child) {
@@ -125,8 +176,16 @@ textarea {
   position: relative;
 }
 
-.connection-link li:last-child {
-  margin-left: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .connection-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connection-link li:last-child {
+    margin-left: 50px;
+  }
 }
 
 .svg-mail {
@@ -161,14 +220,23 @@ textarea {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 2%;
   text-decoration: none;
   transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .connection-link .link {
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connection-link .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .site-nav link:hover, .site-nav link:focus {
@@ -416,6 +484,9 @@ textarea {
   }
 }
 
+.team-list {
+  margin-bottom: -30px;
+}
 @media screen and (min-width: 768px) {
   .team-list {
     display: flex;
