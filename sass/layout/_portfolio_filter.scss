@@ -1,11 +1,30 @@
 /* Портфолио */
 
 .main-projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /* Фильтр */
+
+.button-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
 
 .button-text {
   color: var(--title-text-color);
@@ -26,7 +45,21 @@
 }
 
 .button-item {
-  margin-left: 8px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: unset;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 8px;
+    &:not(:last-child) {
+      margin-right: unset;
+    }
+  }
 }
 
 .button-item {
@@ -41,10 +74,4 @@
     color: #ffffff;
     background-color: var(--accent-color);
   }
-}
-
-.button-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
 }

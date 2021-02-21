@@ -1024,11 +1024,35 @@ textarea {
 
 /* Портфолио */
 .main-projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .main-projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /* Фильтр */
+.button-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .button-list {
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-list {
+    margin-bottom: 50px;
+  }
+}
+
 .button-text {
   color: var(--title-text-color);
   background-color: #f5f4fa;
@@ -1045,7 +1069,23 @@ textarea {
 }
 
 .button-item {
-  margin-left: 8px;
+  margin-bottom: 15px;
+}
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+@media screen and (min-width: 768px) {
+  .button-item {
+    margin-bottom: unset;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-item {
+    margin-left: 8px;
+  }
+  .button-item:not(:last-child) {
+    margin-right: unset;
+  }
 }
 
 .button-item:first-child {
@@ -1055,12 +1095,6 @@ textarea {
 .button-text:focus, .button-text:hover {
   color: #ffffff;
   background-color: var(--accent-color);
-}
-
-.button-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
 }
 
 /* Проекты */
