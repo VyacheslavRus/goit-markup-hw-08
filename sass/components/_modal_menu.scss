@@ -1,0 +1,126 @@
+.backdrop-menu {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop-menu.is-open {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.button-menu-close {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.button-menu-close {
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.modal-nav-list {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 2%;
+  color: var(--title-text-color);
+  margin-left: 40px;
+}
+
+.modal-nav-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .modal-nav-link {
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.modal-nav-link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+
+.modal-connections-list {
+  margin-left: 40px;
+}
+
+.modal-connections-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.modal-connections-link {
+  text-decoration: none;
+  list-style: none;
+}
+
+.modal-connections-link.tel {
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.176;
+  letter-spacing: 2%;
+}
+
+.modal-connections-link.mail {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 2%;
+  color: #757575;
+}
+
+.modal-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+  margin-left: 30px;
+}
+
+.modal-social-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 2%;
+
+  color: var(--accent-color);
+  padding: 0 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}

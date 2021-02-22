@@ -40,7 +40,7 @@
 
     <!-- Menu -->
     
-    <button class="button-menu">
+    <button class="button-menu" data-menu-open>
       <svg class="button-icon">
         <use href="./images/icon3/icon_menu.svg#icon_menu"></use>
       </svg>
@@ -399,9 +399,58 @@
     </footer>
 
 
-<!-- Модальное окно -->
+<!-- Модальное окно menu-->
 
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop-menu is-open" data-menu>
+  <div class="modal-menu">
+  <button class="button-menu-close" data-menu-close>
+    <svg class="icon-close-svg">
+      <use href="./images/icon3/Closed.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <ul class="modal-nav-list">
+    <li class="modal-nav-item">
+      <a href="./index.html" class="modal-nav-link">Студия</a>
+    </li>
+    <li class="modal-nav-item">
+      <a href="./portfolio.html" class="modal-nav-link">Портфолио</a>
+    </li>
+    <li class="modal-nav-item">
+      <a href="#" class="modal-nav-link">Контакты</a>
+    </li>
+  </ul>
+
+  <ul class="modal-connections-list">
+    <li class="modal-connections-item">
+      <a class="modal-connections-link tel" href="tel:+380961111111">+38 096 111 11 11</a>
+    </li>
+    <li class="modal-connections-item">
+      <a lang="en" class="modal-connections-link mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    </li>
+  </ul>
+
+  <ul class="modal-social-list">
+    <li class="modal-social-item">
+      <p class="modal-social-text">Instagram</p>
+    </li>
+    <li class="modal-social-item">
+      <p class="modal-social-text">Twitter</p>
+    </li>
+    <li class="modal-social-item">
+      <p class="modal-social-text">Facebook</p>
+    </li>
+    <li class="modal-social-item">
+      <p class="modal-social-text">LinkedIn</p>
+    </li>
+  </ul>
+  </div>
+  </div>
+
+
+<!-- Модальное окно hero -->
+
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button class="button-close" data-modal-close>
       <svg class="icon-close-svg">
@@ -446,7 +495,8 @@
   </div>
 </div>
 
-<script src="./js/modal.js"></script> -->
+<script src="./js/modal-menu.js"></script>
+<script src="./js/modal.js"></script>
 
 </body>
 </html>

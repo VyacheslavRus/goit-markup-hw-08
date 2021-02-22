@@ -41,6 +41,13 @@
   }
 }
 
+.button-menu .button-icon {
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
 .button-icon {
   width: 24px;
   height: 16px;
