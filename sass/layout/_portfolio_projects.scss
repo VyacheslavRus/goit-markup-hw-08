@@ -1,6 +1,21 @@
 /* Проекты */
 
 .projects-list {
+  margin-left: -30px;
+  margin-top: -30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-item {
+  width: 370px;
+  margin-left: 30px;
+  margin-top: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.projects-list {
   li {
     &:hover,
     &:focus {
@@ -18,21 +33,6 @@
         0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
   }
-}
-
-.projects-list {
-  margin-left: -30px;
-  margin-top: -30px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.projects-item {
-  width: 370px;
-  margin-left: 30px;
-  margin-top: 30px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
 }
 
 .project-subtitle {
