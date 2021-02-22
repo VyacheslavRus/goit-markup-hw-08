@@ -1,18 +1,32 @@
 /* Проекты */
 
 .projects-list {
-  margin-left: -30px;
-  margin-top: -30px;
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: -30px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .projects-item {
-  width: 370px;
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
   background: #ffffff;
   border: 1px solid #eeeeee;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    margin-bottom: unset;
+  }
 }
 
 .projects-list {
@@ -58,12 +72,19 @@
 }
 
 .projects-link {
+  width: 100%;
   display: inline-block;
   text-decoration: none;
 }
 
 .fon-box {
+  width: 100%;
   position: relative;
+}
+
+.fon-box img {
+  width: 100%;
+  height: 100%;
 }
 
 .overlay-text {
