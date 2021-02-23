@@ -652,6 +652,12 @@ textarea {
   line-height: 1.18px;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .section-title-clients {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+}
 
 .clients-list {
   padding-top: 30px;
@@ -794,6 +800,7 @@ textarea {
   .footer-conteiner {
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: unset;
   }
 }
 
